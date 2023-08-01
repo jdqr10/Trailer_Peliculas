@@ -1,0 +1,123 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  
+}
+
+main {
+    padding: 20px;
+}
+
+#movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 71px;
+    
+}
+.movie-image{
+    width: 190px; /* Ancho deseado del recuadro */
+    height: 200px; /* Altura deseada del recuadro */
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+    border: 1px solid #000000; /* Borde del recuadro (opcional) */
+  }
+
+.movie-card {
+    width: 230px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #80808052;;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.movie-card h3{
+    color: wheat;
+}
+
+.movie-card p{
+    color: white;
+}
+
+.buscador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.buscador input {
+    width: 800px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    border-radius: 18px;
+}
+
+.buscador input:focus{
+        /* Establece la animación cuando el input está en foco */
+        animation: inputFocus 0.3s;
+}
+
+h1{
+    background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 40px;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00aced; /* Cambia el color al pasar el ratón */
+}
+
+.created-by {
+    font-size: 14px;
+}
+
+.created-by a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.created-by a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
